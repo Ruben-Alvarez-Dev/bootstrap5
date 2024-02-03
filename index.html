@@ -18,17 +18,76 @@
     ></script>
     <style>
       .fondo {
-        background-image: url("./public/bg.png");
-        background-size: cover;
-        background-position: center;
+        background-image: url("./public/bg-2.png");
+        background-size: 100%;
+        background-repeat: repeat-x;
+        background-position: start;
 
         height: 100vh;
       }
     </style>
   </head>
   <body>
+    <nav
+      class="navbar navbar-expand-sm navbar-dark bg-dark"
+      style="position: fixed; top: 0; width: 100%"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="">
+          <img
+            src="./public/dev-icon.svg"
+            width="30px"
+            style="filter: invert(100%)"
+            alt=""
+          />
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">Background</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
     <div class="row fondo align-items-center">
-      <h1 class="text-white text-center">Programador Full Stack</h1>
+      <h1 class="text-white text-center">Full Stack Web Developer</h1>
+    </div>
+    <div class="container-fluid">
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <p class="text-justify" style="text-align: justify">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quia
+        suscipit ratione, quibusdam itaque repellat dolorum quasi aliquam atque
+        optio.
+      </p>
     </div>
   </body>
 </html>
